@@ -1,0 +1,30 @@
+{
+  "name": "landingrabbit",
+  "owner": {
+    "name": "LandingRabbit",
+    "email": "dev@landingrabbit.com",
+    "url": "https://landingrabbit.com"
+  },
+  "description": "LandingRabbit skills for formatting landing page copy into LandingRabbit-ready markdown.",
+  "homepage": "https://landingrabbit.com",
+  "repository": "https://github.com/LandingRabbit/landingrabbit-skills",
+  "metadata": {
+    "description": "LandingRabbit skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "landingrabbit-skills",
+      "description": "Useful skills for interacting with LandingRabbit.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "LandingRabbit",
+        "email": "dev@landingrabbit.com"
+      },
+      "license": "MIT",
+      "keywords": ["landing pages"],
+      "skills": "./skills/landingrabbit-page-format"
+    }
+  ]
+}
