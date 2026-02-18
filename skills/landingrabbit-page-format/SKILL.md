@@ -28,6 +28,8 @@ Your task is to read user's ready landing page copy and format it into the Landi
 - Only share the LandingRabbit-ready markdown with section types and suggested layouts. Don't add any additional comments or explanations in your answer
 - Examples in this skill are only to show the supported structure. Preserve user's content and tone of voice
 - You don't need to use all available sections and content items. Respect the user's ready content
+- Use `---` only between sections in the final answer, never inside section content blocks
+- Do not output URL-only lines (e.g. `/schedule-a-call`, `https://...`) as normal copy text; keep URLs only inside markdown links `[text](url)`
 
 ## Available sections
 
@@ -49,6 +51,7 @@ Provide the section type in your answer (e.g., Section type: `hero`)
 For each section, use markdown-native structure like this:
 
 - Eyebrow: `[eyebrow]: ...`
+- Icon (for `collection` + `boxes-icons` items): `[icon]: ...` (leave empty when user should pick icons in UI)
 - Smallprint: `[smallprint]: ...`
 - Section or item title: `#`, `##`, `###`
 - Description/body: plain markdown paragraphs
@@ -108,6 +111,9 @@ For sections that support multiple layouts, add `suggestedLayout:` on its own li
 - `success` - filled circle check; use for benefits and positive outcomes
 - `destructive` - filled circle X; use for problems and pain points
 
+If steps item lines already start with emoji markers (for example `😩`, `✅`, `🚀`), set `stepDecoration: none`.
+If `stepDecoration` is not `none`, remove leading emoji/icon markers from step lines.
+
 ---
 
 ### Collection
@@ -118,12 +124,14 @@ For sections that support multiple layouts, add `suggestedLayout:` on its own li
   → Features, Integrations, Technical capabilities
 - `boxes-text` - text-only feature grid, no images
   → Use cases, Capability lists, Short feature summaries
-- `boxes-icons` - emoji-icon grid (place icon in eyebrow, e.g. `⚡ Speed`)
+- `boxes-icons` - icon grid (icon handled separately from text content)
   → Quick-scan feature highlights
 
 Use 'alternate' when items are narrative and outcome-focused.
 Use 'boxes' or 'boxes-text' when items are factual and scannable.
-Use 'boxes-icons' when each item has an emoji icon in the eyebrow.
+Use 'boxes-icons' only when each item is title + description and icon is provided via `[icon]: ...`.
+When using `boxes-icons`, do NOT add item `[eyebrow]: ...` lines.
+For `boxes-icons`, leave icon value empty by default (`[icon]:`) so user can choose icons in UI.
 
 ---
 
@@ -137,6 +145,9 @@ Use 'boxes-icons' when each item has an emoji icon in the eyebrow.
 ### Comparison
 
 - `boxes-text` _(default)_ - side-by-side text-only comparison
+
+Do not include leading `✅`/`❌`/emoji icons in comparison bullet lines.
+Use plain text bullet lines; LandingRabbit renders comparison icons automatically.
 
 ---
 
@@ -233,13 +244,20 @@ Watch a quick walkthrough to understand how drafting, editing, and publishing wo
 ### 2) Steps (`type: 'steps'`)
 
 #### Purpose
+
 - Use for: Lists and steps ("How it works", "Pain points", "Benefits at a glance")
 - Can be sequential (process steps) OR parallel (metrics, achievements, features list)
+- Do NOT use `steps` for two opposing list groups such as:
+  - "Say goodbye to ... / And hello to ..."
+  - "Before ... / After ..."
+  - "Without ... / With ..."
+    Use `comparison` for those.
 - Examples:
   - Sequential: "How it works", Process steps, Timeline, Methodology
   - Parallel: Metrics/results, Statistics, Achievement highlights, Quick facts, Case study results
 
 #### Section header fields
+
 - `eyebrow`
 - `title`
 - `subtitle`
@@ -249,6 +267,7 @@ Watch a quick walkthrough to understand how drafting, editing, and publishing wo
 - Embed: fenced `html` block with `<iframe>` - renders beside the steps list
 
 #### Item fields (structured)
+
 - `eyebrow`
 - `title`
 - `description`
@@ -399,19 +418,19 @@ Marketers and stakeholders work from one source of truth.
 ```markdown
 ## Built for modern B2B campaign teams
 
-[eyebrow]: ⚡ Speed
+[icon]:
 
 ### Launch fast
 
 Create campaign-ready drafts in minutes.
 
-[eyebrow]: 🎯 Relevance
+[icon]:
 
 ### Match audience intent
 
 Build pages tailored to keyword, industry, or use case.
 
-[eyebrow]: ✅ Consistency
+[icon]:
 
 ### Stay on-brand
 
@@ -547,6 +566,7 @@ Scale campaigns with collaboration
 - Show a clear before/after or current/future contrast.
 - Use `❌` bullets for `Before` items.
 - Use `✅` bullets for `After` items.
+- Also use `comparison` when one section has two contrasting bullet groups (e.g. "say goodbye to" and "hello to").
 
 #### Section header fields
 
@@ -584,6 +604,28 @@ A side-by-side view of your workflow shift.
 - ✅ One place for structure, copy, and publish
 - ✅ Faster iteration cycles
 - ✅ Better consistency across campaigns
+```
+
+### Comparison from "goodbye / hello" copy pattern
+
+```markdown
+[eyebrow]: Effortless efficiency
+
+## If your team can use email and WhatsApp, they can use HotKup
+
+### Say goodbye to
+
+- Endless status meetings and chasing updates
+- Duplicating work across tools
+- Tasks falling through the cracks
+- Hefty, modular price tags
+
+### Hello to
+
+- Everything in one place — no more "which WhatsApp group was that in?"
+- Update once, everyone sees it — no more copying between sheets and apps
+- Everyone knows what needs doing next — work actually gets done
+- One price. Full functionality. Designed for SMMEs.
 ```
 
 ### 7) FAQ (`type: 'faq'`)
@@ -714,11 +756,13 @@ Add social-proof credibility with logos and supporting text.
 - `logos`
 
 #### TrustedBy section example
+
 - Use for: Sections mentioning customer/client logos or social proof logos
 - Examples: "Trusted by", "Customer logos", "Client logos", "Join 5,000+ businesses", "[Logos]", "Partners"
 
 ```markdown
 [eyebrow]: Social proof
+
 ## Trusted by modern B2B teams
 
 Used by SaaS, fintech, and agencies running high-velocity campaigns.
