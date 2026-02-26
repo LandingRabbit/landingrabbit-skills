@@ -1,0 +1,16 @@
+{
+  "name": "landingrabbit-skills",
+  "description": "Useful skills for interacting with LandingRabbit.",
+  "version": "1.2.0",
+  "author": {
+    "name": "LandingRabbit",
+    "email": "dev@landingrabbit.com"
+  },
+  "license": "MIT",
+  "mcpServers": {
+    "landingrabbit": {
+      "type": "http",
+      "url": "https://api.landingrabbit.com/v1/mcp"
+    }
+  }
+}

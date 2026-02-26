@@ -4,9 +4,10 @@ AI skills for formatting landing page copy into [LandingRabbit](https://landingr
 
 ## What's included
 
-| Skill | Description |
+| Component | Description |
 |---|---|
-| `landingrabbit-page-format` | Converts landing page copy into structured markdown that LandingRabbit can parse and render. |
+| `landingrabbit-page-format` (skill) | Converts landing page copy into structured markdown that LandingRabbit can parse and render. |
+| LandingRabbit MCP server | Connects to the LandingRabbit API via OAuth so Claude can manage pages, sites, and content directly. |
 
 ### Supported section types
 
@@ -90,6 +91,12 @@ ln -s ~/.codex/landingrabbit-skills/skills ~/.agents/skills/landingrabbit-skills
 ```
 
 See [.codex/INSTALL.md](.codex/INSTALL.md) for Windows instructions and details.
+
+## MCP server
+
+This plugin bundles an MCP (Model Context Protocol) connection to the LandingRabbit API. On first use, Claude Code will open an OAuth flow in your browser so you can authorize access to your LandingRabbit account. After that, Claude can interact with LandingRabbit on your behalf.
+
+Run `/mcp` inside Claude Code to verify the `landingrabbit` server appears and is connected.
 
 ## Usage
 
