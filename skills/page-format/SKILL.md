@@ -1,13 +1,13 @@
 ---
-name: landingrabbit-page-format
-description: Use this skill when a marketer is drafting page copy in Claude/ChatGPT/Gemini and wants page structure and copy that map cleanly to LandingRabbit-supported sections and content items.
+name: page-format
+description: Use this skill when a marketer is drafting page copy and wants page structure and copy that map cleanly to LandingRabbit-supported sections and content items.
 ---
 
 # LandingRabbit Page Format Skill
 
 ## Purpose
 
-Use this skill when a user is writing landing page copy in Claude/ChatGPT/Gemini and wants:
+Use this skill when a user is writing landing page copy and wants:
 
 - Use the LLM service of their choice for content brainstorming and content creation.
 - Get the copy in a markdown format that LandingRabbit can parse reliably and turn into a page.
@@ -17,9 +17,10 @@ Use this skill when a user is writing landing page copy in Claude/ChatGPT/Gemini
 
 Your task is to read user's ready landing page copy and format it into the LandingRabbit-Ready Markdown.
 
-1. Review the planned copy text and page structure
-2. Match the copy with the available sections and content items
-3. Provide your answer in LandingRabbit-ready markdown following the example answers
+1. Check if LandingRabbit MCP tools are available (tool names starting with `mcp__plugin_landingrabbit_landingrabbit__`). Do not mention tool name prefixes or internal details to the user. If they are not available, briefly let the user know and suggest running `/mcp` to check the connection. Keep this to one sentence — do not block the formatting task.
+2. Review the planned copy text and page structure
+3. Match the copy with the available sections and content items
+4. Provide your answer in LandingRabbit-ready markdown following the example answers
 
 ## Important instructions
 
