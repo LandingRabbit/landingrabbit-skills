@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-03-10
+
+### Changed
+
+- Help command MCP tool table now includes `update_page_metadata`
+- Main `landingrabbit` skill now mentions SEO metadata editing for existing pages
+- Help and README wording updated to reflect page metadata inspection and SEO metadata editing via MCP
+
 ## [2.0.0] - 2026-02-27
 
 ### Breaking
@@ -65,7 +73,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v1.2.0...v2.0.0
 [1.2.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v1.0.0...v1.1.0

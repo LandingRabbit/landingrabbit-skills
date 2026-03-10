@@ -156,6 +156,8 @@ Select `landingrabbit` from the list, then remove the marketplace source:
 
 Run `/landingrabbit:landingrabbit` to get started. It checks your MCP connection and walks you through what you can do.
 
+With the MCP server connected, Claude can inspect workspace pages, look up a specific page by slug, and update SEO metadata directly from chat.
+
 To format existing copy into LandingRabbit-ready markdown, use `/landingrabbit:page-format`. Give it your landing page copy — headlines, descriptions, CTAs, testimonials, pricing, FAQ, etc. — and it returns a single markdown document ready to import. The skill preserves your content and tone.
 
 Run `/landingrabbit:help` to see all available skills and MCP tools.

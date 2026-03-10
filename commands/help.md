@@ -40,7 +40,8 @@ If MCP tools are available, also output this table:
 │ create_page_from_content       │ Convert existing copy to a page            │
 │ migrate_blog_content           │ Import blog posts into LandingRabbit       │
 │ replace_links                  │ Bulk replace URLs across pages             │
-│ list_workspace_pages           │ List all pages with status                 │
+│ list_workspace_pages           │ List pages, metadata, and status           │
+│ update_page_metadata           │ Batch update page SEO metadata             │
 │ edit_page_content              │ Edit sections and page content             │
 │ edit_page_styles               │ Edit visual styles and layouts             │
 │ set_page_publish_state         │ Publish or unpublish a page                │
