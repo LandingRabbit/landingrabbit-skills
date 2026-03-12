@@ -10,7 +10,7 @@
   "repository": "https://github.com/LandingRabbit/landingrabbit-skills",
   "metadata": {
     "description": "LandingRabbit skills",
-    "version": "2.1.0"
+    "version": "2.2.0"
   },
   "plugins": [
     {

@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2026-03-12
+
+### Added
+
+- Help command MCP tool table now includes `template`
+- README now documents MCP template management workflows, including template inspection, default template management, delete-on-explicit-request guidance, and section-group brand style updates
+- README now adds multi-locale guidance for locale-specific brand style changes
+
+### Changed
+
+- Main `landingrabbit` skill now mentions template editing when guiding users through page-management workflows
+
 ## [2.1.0] - 2026-03-10
 
 ### Changed
@@ -73,7 +85,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.1.0...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v1.2.0...v2.0.0
 [1.2.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v1.1.0...v1.2.0

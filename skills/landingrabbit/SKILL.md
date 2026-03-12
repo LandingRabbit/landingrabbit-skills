@@ -18,7 +18,7 @@ Check if LandingRabbit MCP tools are available (tool names starting with `mcp__p
 Only show this if the MCP connection is available. Present the options as a short list:
 
 1. **Create a new landing page** — describe your page idea, target audience, or paste existing copy
-2. **Edit an existing page** — change content, styles, SEO metadata, or publish status
+2. **Edit an existing page** — change content, styles, templates, SEO metadata, or publish status
 3. **Format copy for import** — use `/landingrabbit:page-format` to structure copy into LandingRabbit-ready markdown
 4. **See all available tools** — run `/landingrabbit:help`
 

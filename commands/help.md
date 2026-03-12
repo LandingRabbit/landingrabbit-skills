@@ -42,6 +42,7 @@ If MCP tools are available, also output this table:
 │ replace_links                  │ Bulk replace URLs across pages             │
 │ list_workspace_pages           │ List pages, metadata, and status           │
 │ update_page_metadata           │ Batch update page SEO metadata             │
+│ template                       │ Manage section templates and styles        │
 │ edit_page_content              │ Edit sections and page content             │
 │ edit_page_styles               │ Edit visual styles and layouts             │
 │ set_page_publish_state         │ Publish or unpublish a page                │
