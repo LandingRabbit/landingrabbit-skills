@@ -44,6 +44,7 @@ If MCP tools are available, also output this table:
 │ update_page_metadata           │ Batch update page SEO metadata             │
 │ template                       │ Manage section templates and styles        │
 │ edit_page_content              │ Edit sections and page content             │
+│ edit_page_images               │ Upload, search, and place images           │
 │ edit_page_styles               │ Edit visual styles and layouts             │
 │ set_page_publish_state         │ Publish or unpublish a page                │
 │ orchestrator_chat              │ Natural language page editing              │
