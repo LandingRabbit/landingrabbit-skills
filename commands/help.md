@@ -33,21 +33,21 @@ If MCP tools are available, also output this table:
 ┌────────────────────────────────┬────────────────────────────────────────────┐
 │ Tool                           │ Description                                │
 ├────────────────────────────────┼────────────────────────────────────────────┤
-│ create_landing_page            │ Create a full page in one call             │
+│ create_landing_page            │ Create a new page (fast track)             │
 │ plan_your_landing_page         │ Determine best page type                   │
-│ create_detailed_plan           │ Build value proposition plan               │
-│ generate_landing_page          │ Generate final page and get URL            │
+│ create_detailed_plan           │ Write a plan before creating a page        │
+│ generate_landing_page          │ Create a new page based on a plan          │
 │ create_page_from_content       │ Convert existing copy to a page            │
 │ migrate_blog_content           │ Import blog posts into LandingRabbit       │
 │ replace_links                  │ Bulk replace URLs across pages             │
-│ list_workspace_pages           │ List pages, metadata, and status           │
+│ list_workspace_pages           │ List all published and drafts              │
 │ update_page_metadata           │ Batch update page SEO metadata             │
 │ template                       │ Manage section templates and styles        │
 │ edit_page_content              │ Edit sections and page content             │
 │ edit_page_images               │ Upload, search, and place images           │
 │ edit_page_styles               │ Edit visual styles and layouts             │
 │ set_page_publish_state         │ Publish or unpublish a page                │
-│ orchestrator_chat              │ Natural language page editing              │
+│ orchestrator_chat              │ Choose the right tool for page edits       │
 └────────────────────────────────┴────────────────────────────────────────────┘
 ```
 
