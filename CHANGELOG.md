@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.0] - 2026-06-18
+
+### Added
+
+- Help command MCP tool table now includes `manage_tags` and `manage_categories`
+- Page format skill now documents `feed` sections for dynamic collection post lists
+- Page format skill now documents current LandingRabbit layout directives, including saved styles, media visibility, image fit, section header positions, pricing switches, carousel autoplay, logo scrolling, and feed configuration
+- Page format skill now supports nested `[boxes]` and `[testimonial]` blocks where LandingRabbit imports them
+- Page format skill now documents richer bullet/icon markers, bottom CTAs, testimonial media/logos, and article-style custom content
+- README now documents feed sections, expanded formatting directives, and tag/category management via MCP
+
+### Changed
+
+- Main `landingrabbit` skill now mentions tag and category management in page-editing workflows
+
 ## [2.3.1] - 2026-03-26
 
 ### Changed
@@ -102,7 +117,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.3.1...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.4.0...HEAD
+[2.4.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.3.1...v2.4.0
 [2.3.1]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.3.0...v2.3.1
 [2.3.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.1.0...v2.2.0

@@ -9,7 +9,7 @@ AI skills for formatting landing page copy into [LandingRabbit](https://landingr
 | `landingrabbit` (skill)  | Main entry point — guides you through creating, editing, or managing pages           |
 | `page-format` (skill)    | Converts landing page copy into structured markdown that LandingRabbit can parse     |
 | `help` (command)         | Lists all available skills and MCP tools with connection status                      |
-| LandingRabbit MCP server | Connects to the LandingRabbit API via OAuth so Claude can manage pages, templates, and styles directly |
+| LandingRabbit MCP server | Connects to the LandingRabbit API via OAuth so Claude can manage pages, templates, styles, tags, and categories directly |
 
 ### Supported section types
 
@@ -25,6 +25,7 @@ AI skills for formatting landing page copy into [LandingRabbit](https://landingr
 | `faq`          | Question-and-answer pairs                              |
 | `cta`          | Focused conversion sections                            |
 | `custom`       | Free-form mixed content (about us, narratives, embeds) |
+| `feed`         | Dynamic post lists from a workspace collection          |
 
 ### Content fields
 
@@ -38,20 +39,26 @@ Sections use markdown-native structure:
 - CTAs: `[Label](url)` — one per line
 - Images: `![Alt](url)`
 - Embeds: fenced `html` blocks
-- Styled bullets: `✅`, `❌`, or `-` prefixes
+- Styled bullets: `✅`, `✓`, `☑`, `❌`, `✗`, `⭐`, `→`, `➡️`, `-`, `*`, `•`, or `:icon:` prefixes
+- Nested boxes/testimonials: `[boxes]` and `[testimonial]` where supported
+- Bottom CTAs: `[bottomCtas]` or `[bottomCta]` for feed
 
 ### Layout options
 
 Most sections support a `suggestedLayout` directive:
 
 ```
-hero          → horizontal, horizontal-reversed, vertical
-steps         → stepDecoration: number, none, check, star, arrow, success, destructive
-collection    → alternate, boxes, boxes-text, boxes-icons
-testimonials  → carousel, grid
-comparison    → boxes-text
-cta           → default, embed
-custom        → left, middle
+hero          → horizontal, horizontal-reversed, vertical; mediaVisibility; imageFit; style
+steps         → stepDecoration; mediaVisibility; mediaPosition; imageFit; stepIcon; style
+collection    → alternate, boxes, boxes-text, boxes-icons; sectionHeaderPosition; dividers; imageFit; style
+testimonials  → carousel, grid; carouselAutoplay; sectionHeaderPosition; imageFit; style
+comparison    → boxes-text, boxes, boxes-icons; imageFit
+cta           → default, embed; mediaVisibility; imageFit; style
+custom        → left, middle; style
+pricing       → pricingSwitch; style
+faq           → sectionHeaderPosition; style
+trustedBy     → logosScroll; logosScrollSpeed; style
+feed          → boxes, boxes-text, alternate; collection; itemCount; showDescription; showTimestamp; readMoreText
 ```
 
 ## Install
@@ -156,13 +163,13 @@ Select `landingrabbit` from the list, then remove the marketplace source:
 
 Run `/landingrabbit:landingrabbit` to get started. It checks your MCP connection and walks you through what you can do.
 
-With the MCP server connected, Claude can inspect workspace pages, look up a specific page by slug, update SEO metadata, edit existing page content, and manage page images (upload, search, and place) directly from chat.
+With the MCP server connected, Claude can inspect workspace pages, look up a specific page by slug, update SEO metadata, edit existing page content, manage tags and categories, and manage page images (upload, search, and place) directly from chat.
 
 Claude can also manage section style templates through MCP: inspect the active template/brand/base layers for a layout, create or update section templates, mark a template as the default for its layout, delete a template on explicit request, and update brand styles for an entire section group.
 
 In some multi-locale workspaces, Claude may ask you to detach inherited styles before applying locale-specific brand style changes.
 
-To format existing copy into LandingRabbit-ready markdown, use `/landingrabbit:page-format`. Give it your landing page copy — headlines, descriptions, CTAs, testimonials, pricing, FAQ, etc. — and it returns a single markdown document ready to import. The skill preserves your content and tone.
+To format existing copy into LandingRabbit-ready markdown, use `/landingrabbit:page-format`. Give it your landing page copy — headlines, descriptions, CTAs, testimonials, pricing, FAQ, feed sections, article content, etc. — and it returns a single markdown document ready to import. The skill preserves your content and tone.
 
 Run `/landingrabbit:help` to see all available skills and MCP tools.
 

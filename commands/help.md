@@ -42,11 +42,13 @@ If MCP tools are available, also output this table:
 │ replace_links                  │ Bulk replace URLs across pages             │
 │ list_workspace_pages           │ List all published and drafts              │
 │ update_page_metadata           │ Batch update page SEO metadata             │
-│ template                       │ Manage section templates and styles        │
+│ manage_tags                    │ List, create, or delete workspace tags     │
+│ manage_categories              │ List, create, or delete categories         │
 │ edit_page_content              │ Edit sections and page content             │
-│ edit_page_images               │ Upload, search, and place images           │
 │ edit_page_styles               │ Edit visual styles and layouts             │
+│ template                       │ Manage section templates and styles        │
 │ set_page_publish_state         │ Publish or unpublish a page                │
+│ edit_page_images               │ Upload, search, and place images           │
 │ orchestrator_chat              │ Choose the right tool for page edits       │
 └────────────────────────────────┴────────────────────────────────────────────┘
 ```
