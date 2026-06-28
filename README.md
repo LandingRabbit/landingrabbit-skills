@@ -9,7 +9,7 @@ AI skills for formatting landing page copy into [LandingRabbit](https://landingr
 | `landingrabbit` (skill)  | Main entry point — guides you through creating, editing, or managing pages           |
 | `page-format` (skill)    | Converts landing page copy into structured markdown that LandingRabbit can parse     |
 | `help` (command)         | Lists all available skills and MCP tools with connection status                      |
-| LandingRabbit MCP server | Connects to the LandingRabbit API via OAuth so Claude can manage pages, templates, styles, tags, and categories directly |
+| LandingRabbit MCP server | Connects to the LandingRabbit API via OAuth so Claude can manage pages, templates, styles, custom layouts, tags, and categories directly |
 
 ### Supported section types
 
@@ -166,6 +166,8 @@ Run `/landingrabbit:landingrabbit` to get started. It checks your MCP connection
 With the MCP server connected, Claude can inspect workspace pages, look up a specific page by slug, update SEO metadata, edit existing page content, manage tags and categories, and manage page images (upload, search, and place) directly from chat.
 
 Claude can also manage section style templates through MCP: inspect the active template/brand/base layers for a layout, create or update section templates, mark a template as the default for its layout, delete a template on explicit request, and update brand styles for an entire section group.
+
+When a section needs a layout that isn't available out of the box, Claude can build a fully custom section design through MCP: start from a placeholder-based starter layout, save or update the custom layout for a section, and revert back to standard rendering — all while keeping chosen parts of the section editable in the editor.
 
 In some multi-locale workspaces, Claude may ask you to detach inherited styles before applying locale-specific brand style changes.
 
