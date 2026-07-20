@@ -163,9 +163,9 @@ Select `landingrabbit` from the list, then remove the marketplace source:
 
 Run `/landingrabbit:landingrabbit` to get started. It checks your MCP connection and walks you through what you can do.
 
-With the MCP server connected, Claude can inspect workspace pages, look up a specific page by slug, update SEO metadata, edit existing page content, manage tags and categories, and manage page images (upload, search, and place) directly from chat.
+With the MCP server connected, Claude can inspect workspace pages, look up a specific page by slug, update SEO metadata, edit existing page content, manage tags and categories, manage page images (upload, search, and place), and find icons from the built-in icon library directly from chat.
 
-Claude can also manage section style templates through MCP: inspect the active template/brand/base layers for a layout, create or update section templates, mark a template as the default for its layout, delete a template on explicit request, and update brand styles for an entire section group.
+Claude can also manage section style templates through MCP: plan how to recreate a described or pictured design with stock section layouts, inspect the active template/brand/base layers for a layout, create or update section templates, mark a template as the default for its layout, delete a template on explicit request, and update brand styles for an entire section group.
 
 When a section needs a layout that isn't available out of the box, Claude can build a fully custom section design through MCP: start from a placeholder-based starter layout, save or update the custom layout for a section, and revert back to standard rendering — all while keeping chosen parts of the section editable in the editor.
 

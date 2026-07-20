@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.6.0] - 2026-07-20
+
+### Added
+
+- Help command MCP tool table now includes `search_icons`
+- README now documents planning reference designs against stock section layouts and finding icons from the built-in icon library via MCP
+
+### Changed
+
+- Help command MCP tool table renames `template` to `manage_templates`, which now also plans whether a described or pictured design is achievable with stock layouts
+- Main `landingrabbit` skill now mentions icons and recreating sections from reference designs in page-editing workflows
+
 ## [2.5.0] - 2026-06-28
 
 ### Added
@@ -128,7 +140,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.5.0...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.6.0...HEAD
+[2.6.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.3.1...v2.4.0
 [2.3.1]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.3.0...v2.3.1

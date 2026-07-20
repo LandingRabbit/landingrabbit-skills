@@ -46,10 +46,11 @@ If MCP tools are available, also output this table:
 │ manage_categories              │ List, create, or delete categories         │
 │ edit_page_content              │ Edit sections and page content             │
 │ edit_page_styles               │ Edit visual styles and layouts             │
-│ template                       │ Manage section templates and styles        │
+│ manage_templates               │ Plan designs, manage templates and styles  │
 │ custom_design                  │ Design a custom section layout             │
 │ set_page_publish_state         │ Publish or unpublish a page                │
 │ edit_page_images               │ Upload, search, and place images           │
+│ search_icons                   │ Find icons for section content             │
 │ orchestrator_chat              │ Choose the right tool for page edits       │
 └────────────────────────────────┴────────────────────────────────────────────┘
 ```
