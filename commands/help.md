@@ -33,14 +33,14 @@ If MCP tools are available, also output this table:
 ┌────────────────────────────────┬────────────────────────────────────────────┐
 │ Tool                           │ Description                                │
 ├────────────────────────────────┼────────────────────────────────────────────┤
-│ create_landing_page            │ Create a new page (fast track)             │
-│ plan_your_landing_page         │ Determine best page type                   │
-│ create_detailed_plan           │ Write a plan before creating a page        │
-│ generate_landing_page          │ Create a new page based on a plan          │
+│ create_page                    │ Create a new page from ideas or materials  │
 │ create_page_from_content       │ Convert existing copy to a page            │
+│ get_page_format_guide          │ Read the markdown format for page imports  │
 │ migrate_blog_content           │ Import blog posts into LandingRabbit       │
 │ replace_links                  │ Bulk replace URLs across pages             │
 │ list_workspace_pages           │ List all published and drafts              │
+│ export_pages_csv               │ Export all pages to a CSV file             │
+│ send_meeting_transcripts       │ Find content gaps from meeting transcripts │
 │ update_page_metadata           │ Batch update page SEO metadata             │
 │ manage_tags                    │ List, create, or delete workspace tags     │
 │ manage_categories              │ List, create, or delete categories         │

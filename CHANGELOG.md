@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.7.0] - 2026-09-07
+
+### Added
+
+- Help command MCP tool table now includes `get_page_format_guide`, `export_pages_csv`, and `send_meeting_transcripts`
+- Page format skill now documents `tabs` sections with `top`, `left`, and `right` layouts, split cards, and autoplay options
+- Page format skill now documents that a pricing line with several periods becomes one option per period
+- README now documents tabs sections, page creation from ideas or transcripts, the page format guide over MCP, collection placement on publish, CSV export, and meeting transcript content-gap analysis
+
+### Changed
+
+- Help command MCP tool table renames `create_landing_page` to `create_page`, which now generates any page type from ideas and materials in one call
+- Main `landingrabbit` skill now offers content review (CSV export and meeting transcripts) and mentions collections in page-editing workflows
+
+### Removed
+
+- Help command MCP tool table drops `plan_your_landing_page`, `create_detailed_plan`, and `generate_landing_page`; `create_page` replaces the three-step flow
+
 ## [2.6.0] - 2026-07-20
 
 ### Added
@@ -140,7 +158,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.6.0...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.7.0...HEAD
+[2.7.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.6.0...v2.7.0
 [2.6.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.3.1...v2.4.0

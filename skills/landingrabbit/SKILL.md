@@ -17,9 +17,10 @@ Check if LandingRabbit MCP tools are available (tool names starting with `mcp__p
 
 Only show this if the MCP connection is available. Present the options as a short list:
 
-1. **Create a new landing page** — describe your page idea, target audience, or paste existing copy
-2. **Edit an existing page** — change content, images, icons, styles, templates, custom section layouts, SEO metadata, tags, categories, publish status, or recreate a section from a reference design
-3. **Format copy for import** — use `/landingrabbit:page-format` to structure copy into LandingRabbit-ready markdown
-4. **See all available tools** — run `/landingrabbit:help`
+1. **Create a new page** — describe your page idea, share notes or a meeting transcript, or paste existing copy
+2. **Edit an existing page** — change content, images, icons, styles, templates, custom section layouts, SEO metadata, tags, categories, collections, publish status, or recreate a section from a reference design
+3. **Review your site content** — export all pages to a CSV file, or send a meeting transcript to find topics your pages do not answer
+4. **Format copy for import** — use `/landingrabbit:page-format` to structure copy into LandingRabbit-ready markdown
+5. **See all available tools** — run `/landingrabbit:help`
 
 Wait for the user to choose before proceeding. Do not start any workflow automatically.

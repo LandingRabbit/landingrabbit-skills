@@ -47,6 +47,7 @@ Your task is to read user's ready landing page copy and format it into the Landi
 - `faq`: Question-and-answer section to handle objections.
 - `cta`: Focused conversion section, often near the end, but sometimes in between the page content as well.
 - `custom`: Free-form mixed content (headings, text blocks, image, embed, CTA). Typically used for sections like "About us", simple statements (e.g., H2 and text block), or a full article page content
+- `tabs`: Clickable tabs, each swapping in its own content card. For example, one tab per audience or use case.
 - `feed`: Dynamic list of posts from a workspace collection (configuration-only). Shows, for example, the latest blog posts and news articles on a homepage.
 
 ## Response format for sections
@@ -146,6 +147,24 @@ Based on the user's request, you can also define optional layout configurations:
 - `imageFit: fill | free-ratio` — how the section media fills its slot
 - `mediaPosition: left | right` — which side of the list the media sits on
 - `stepIcon: <one descriptive word or exact CamelCase icon name>` — custom icon beside every step (replaces `stepDecoration`)
+
+---
+
+### Tabs
+
+- `top` _(default)_ - tab strip above the card
+- `left` - tab strip in a column left of the card
+- `right` - tab strip in a column right of the card
+
+Based on the user's request, you can also define optional layout configurations:
+
+- `cardStyle: stacked | split` — card as one stack, or media in its own column (`top` layout only)
+- `mediaSide: left | right` — which side the media column is on (`top` layout with `cardStyle: split`)
+- `tabContentMode: expand | show-all` — whether only the active tab shows its description, or all do (`left`/`right` layouts only)
+- `autoplay: <seconds> | off` — auto-advance the tabs
+- `autoplayProgress: on | off` — moving progress bar on each tab
+- `style: <saved style name>` — apply a named section style
+- `imageFit: fill | free-ratio` — how card media fills its slot
 
 ---
 
@@ -478,7 +497,109 @@ Updates across ads, pages, and sales assets drift when the process is fragmented
 - Team collaboration
 ```
 
-### 3) Collection (`type: 'collection'`)
+### 3) Tabs (`type: 'tabs'`)
+
+#### Purpose
+
+Parallel alternatives the reader clicks between — audiences, use cases, feature modes, workflows — each swapping the content of one card. Use it only when the options are alternatives to choose between: a sequential process is `steps`, and a list where everything is visible at once is `collection`.
+
+#### Section header fields
+
+- `eyebrow`
+- `title`
+- `subtitle`
+- `ctas`
+
+#### Item fields
+
+Each tab has two parts. The Tab is the clickable label, an ordered stack (all optional except the heading):
+
+- `[eyebrow]`
+- the `###` heading
+- one text line
+- CTA links
+
+CTA links always come last on the label.
+
+The Card is everything after the label, an ordered stack. Place its parts in the order they should read:
+
+- text
+- `####` headings
+- CTA links
+- images
+- `[embed]`
+
+#### Use-case switcher example
+
+- `layout`: `top`
+
+```markdown
+[eyebrow]: Who it's for
+
+## One workspace, every team
+
+### Marketing
+
+Launch campaign pages without waiting on a design queue.
+
+[See marketing pages](/marketing)
+
+#### Ship in an afternoon
+
+Start from your brand and publish to your own domain the same day.
+
+[Start free](/signup)
+
+### Sales
+
+Build one-pagers for the accounts you are working right now.
+
+#### Personalise per account
+
+Reuse the page you already have and swap only what changes.
+
+[Book a walkthrough](/demo)
+
+### Support
+
+Turn your best answers into pages customers can find.
+
+#### Cut repeat questions
+
+Publish the answer once and link to it from every channel.
+```
+
+#### Product tour with a split card example
+
+- `layout`: `top`
+- `cardStyle`: `split`
+- `mediaSide`: `right`
+
+```markdown
+## See it work
+
+### Plan
+
+Describe the page you want and get a full structure back.
+
+![Plan view](https://example.com/plan.png)
+
+### Write
+
+Every section is generated in your brand voice.
+
+![Editor view](https://example.com/editor.png)
+
+### Publish
+
+Go live on your own domain in one click.
+
+![Published page](https://example.com/published.png)
+```
+
+---
+
+### 4) Collection (`type: 'collection'`)
 
 #### Purpose
 
@@ -620,7 +741,7 @@ Convert specs into clear solution pages
 Create account-specific ABM pages from call insights
 ```
 
-### 4) Testimonials (`type: 'testimonials'`)
+### 5) Testimonials (`type: 'testimonials'`)
 
 #### Purpose
 
@@ -675,7 +796,7 @@ Northbeam AI
 [Read customer stories](https://example.com/customers)
 ```
 
-### 5) Pricing (`type: 'pricing'`)
+### 6) Pricing (`type: 'pricing'`)
 
 #### Purpose
 
@@ -701,6 +822,7 @@ Pricing tables and plans — plan names with prices, and optionally feature bull
 
 - Single price: one bare price line — `$49/month`. A price without digits (`Custom`) renders as-is.
 - Billing switch: one labeled line per period — `Monthly: $49/month` and `Yearly: $470/year`. The labels become the switch options; the FIRST line listed is the default.
+- Several periods on one line (`$12/month or $120/year`) are split into one option per period.
 - Currency switch: repeat a label (or bare line) with another preset currency (`$`, `€`, `£`) — `Monthly: $49/month` + `Monthly: €45/month`. The first currency listed is the default.
 - Combined switches: write every intended billing-period and currency combination explicitly. Missing combinations stay blank; LandingRabbit does not infer exchange rates or fabricate prices.
 - Per-period units work too: `$5/user/month`.
@@ -788,7 +910,7 @@ Scale campaigns with collaboration
 [Start Growth](https://example.com/signup)
 ```
 
-### 6) Comparison (`type: 'comparison'`)
+### 7) Comparison (`type: 'comparison'`)
 
 #### Purpose
 
@@ -859,7 +981,7 @@ A side-by-side view of your workflow shift.
 - One price. Full functionality. Designed for SMMEs.
 ```
 
-### 7) FAQ (`type: 'faq'`)
+### 8) FAQ (`type: 'faq'`)
 
 #### Purpose
 
@@ -911,7 +1033,7 @@ No. Growth, product marketing, and content teams use it collaboratively.
 [See our documentation](https://example.com/docs)
 ```
 
-### 8) CTA (`type: 'cta'`)
+### 9) CTA (`type: 'cta'`)
 
 #### Purpose
 
@@ -950,7 +1072,7 @@ Start with AI-assisted structure, refine messaging, and publish in minutes.
 [smallprint]: Free trial available.
 ```
 
-### 9) Custom (`type: 'custom'`)
+### 10) Custom (`type: 'custom'`)
 
 #### Purpose
 
@@ -995,7 +1117,7 @@ LandingRabbit is for B2B teams that need fast launches and consistent conversion
 
 ````
 
-### 10) TrustedBy (`type: 'trustedBy'`)
+### 11) TrustedBy (`type: 'trustedBy'`)
 
 #### Purpose
 
@@ -1027,7 +1149,7 @@ Logos: [Add 6-10 customer logos in editor]
 
 ---
 
-### 11) Feed (`type: 'feed'`)
+### 12) Feed (`type: 'feed'`)
 
 #### Purpose
 
