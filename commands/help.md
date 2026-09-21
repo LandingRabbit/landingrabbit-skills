@@ -41,6 +41,7 @@ If MCP tools are available, also output this table:
 │ list_workspace_pages           │ List all published and drafts              │
 │ export_pages_csv               │ Export all pages to a CSV file             │
 │ send_meeting_transcripts       │ Find content gaps from meeting transcripts │
+│ content_gaps                   │ Find winnable search topics and page ideas │
 │ update_page_metadata           │ Batch update page SEO metadata             │
 │ manage_tags                    │ List, create, or delete workspace tags     │
 │ manage_categories              │ List, create, or delete categories         │

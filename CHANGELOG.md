@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.8.0] - 2026-09-21
+
+### Added
+
+- Help command MCP tool table now includes `content_gaps`
+- README now documents search keyword opportunities and page ideas via MCP
+
+### Changed
+
+- Main `landingrabbit` skill now mentions search keyword opportunities in the content review option
+
 ## [2.7.0] - 2026-09-07
 
 ### Added
@@ -158,7 +169,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.7.0...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.8.0...HEAD
+[2.8.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.6.0...v2.7.0
 [2.6.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.4.0...v2.5.0

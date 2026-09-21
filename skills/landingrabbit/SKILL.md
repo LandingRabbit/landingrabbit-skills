@@ -19,7 +19,7 @@ Only show this if the MCP connection is available. Present the options as a shor
 
 1. **Create a new page** — describe your page idea, share notes or a meeting transcript, or paste existing copy
 2. **Edit an existing page** — change content, images, icons, styles, templates, custom section layouts, SEO metadata, tags, categories, collections, publish status, or recreate a section from a reference design
-3. **Review your site content** — export all pages to a CSV file, or send a meeting transcript to find topics your pages do not answer
+3. **Review your site content** — export all pages to a CSV file, send a meeting transcript to find topics your pages do not answer, or explore search keyword opportunities and page ideas
 4. **Format copy for import** — use `/landingrabbit:page-format` to structure copy into LandingRabbit-ready markdown
 5. **See all available tools** — run `/landingrabbit:help`
 

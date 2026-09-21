@@ -171,6 +171,8 @@ Claude can also inspect workspace pages, look up a specific page by slug, update
 
 For content review, Claude can export every page to a CSV file, or send a meeting transcript for content-gap analysis. The analysis runs in the background and its recommendations appear on the Meetings page in LandingRabbit.
 
+Claude can also list the search keywords your workspace could rank for, grouped into topics with page ideas, and turn a chosen idea into the brief for a new page. This needs confirmed competitors under Brand in LandingRabbit.
+
 Claude can also manage section style templates through MCP: plan how to recreate a described or pictured design with stock section layouts, inspect the active template/brand/base layers for a layout, create or update section templates, mark a template as the default for its layout, delete a template on explicit request, and update brand styles for an entire section group.
 
 When a section needs a layout that isn't available out of the box, Claude can build a fully custom section design through MCP: start from a placeholder-based starter layout, save or update the custom layout for a section, and revert back to standard rendering — all while keeping chosen parts of the section editable in the editor.
