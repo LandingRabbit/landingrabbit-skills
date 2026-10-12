@@ -15,11 +15,13 @@ Check if LandingRabbit MCP tools are available (tool names starting with `mcp__p
 
 ## Step 2 — Ask what the user wants to do
 
-Only show this if the MCP connection is available. Present the options as a short list:
+Only show this if the MCP connection is available. If only `list_brands` and `edit_brand_design` are available, the account authorized **My brands** instead of a workspace: offer to list their brands and edit a brand's design instead of the options below.
+
+Present the options as a short list:
 
 1. **Create a new page** — describe your page idea, share notes or a meeting transcript, or paste existing copy
 2. **Edit an existing page** — change content, images, icons, styles, templates, custom section layouts, SEO metadata, tags, categories, collections, publish status, or recreate a section from a reference design
-3. **Review your site content** — export all pages to a CSV file, send a meeting transcript to find topics your pages do not answer, or explore search keyword opportunities and page ideas
+3. **Review your site content** — export all pages to a CSV file, send a meeting transcript and work through the Meetings cards it produces, or explore search keyword opportunities and page ideas
 4. **Format copy for import** — use `/landingrabbit:page-format` to structure copy into LandingRabbit-ready markdown
 5. **See all available tools** — run `/landingrabbit:help`
 

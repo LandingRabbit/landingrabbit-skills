@@ -41,10 +41,15 @@ If MCP tools are available, also output this table:
 │ list_workspace_pages           │ List all published and drafts              │
 │ export_pages_csv               │ Export all pages to a CSV file             │
 │ send_meeting_transcripts       │ Find content gaps from meeting transcripts │
+│ meeting_gaps                   │ List open cards on the Meetings page       │
+│ answer_meeting_gap             │ Answer a Meetings card question            │
+│ start_meeting_gap_action       │ Record the page that answers a card        │
+│ dismiss_meeting_gap            │ Dismiss a Meetings card for good           │
 │ content_gaps                   │ Find winnable search topics and page ideas │
 │ update_page_metadata           │ Batch update page SEO metadata             │
 │ manage_tags                    │ List, create, or delete workspace tags     │
 │ manage_categories              │ List, create, or delete categories         │
+│ get_page_content               │ Read a page's sections before editing      │
 │ edit_page_content              │ Edit sections and page content             │
 │ edit_page_styles               │ Edit visual styles and layouts             │
 │ manage_templates               │ Plan designs, manage templates and styles  │
@@ -55,6 +60,8 @@ If MCP tools are available, also output this table:
 │ orchestrator_chat              │ Choose the right tool for page edits       │
 └────────────────────────────────┴────────────────────────────────────────────┘
 ```
+
+If only `list_brands` and `edit_brand_design` are available, the account authorized **My brands** instead of a workspace. Skip the tool table and tell the user this connection can list their brands and edit a brand's design.
 
 If MCP tools are NOT available, show instead:
 

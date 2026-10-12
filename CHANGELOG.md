@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.0] - 2026-10-12
+
+### Added
+
+- Help command MCP tool table now includes `get_page_content`, `meeting_gaps`, `answer_meeting_gap`, `start_meeting_gap_action`, and `dismiss_meeting_gap`
+- Help command and main `landingrabbit` skill now explain agency brand connections, which offer only `list_brands` and `edit_brand_design`
+- README now documents working through Meetings cards, reading a page's sections before editing, and agency brand design editing via MCP
+
+### Changed
+
+- Main `landingrabbit` skill now mentions Meetings cards in the content review option
+
 ## [2.8.0] - 2026-09-21
 
 ### Added
@@ -169,7 +181,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.8.0...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.9.0...HEAD
+[2.9.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.8.0...v2.9.0
 [2.8.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.6.0...v2.7.0
 [2.6.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.5.0...v2.6.0

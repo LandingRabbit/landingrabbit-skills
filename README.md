@@ -167,9 +167,11 @@ Run `/landingrabbit:landingrabbit` to get started. It checks your MCP connection
 
 With the MCP server connected, Claude can create a new page from your ideas, notes, or a meeting transcript. Claude can also convert finished copy into a page, and it can read the LandingRabbit page format guide over MCP, so copy drafted in chat imports without loss.
 
-Claude can also inspect workspace pages, look up a specific page by slug, update SEO metadata, edit existing page content, manage tags and categories, manage page images (upload, search, and place), and find icons from the built-in icon library directly from chat. On publish, Claude can place a page in a collection or move it to the site root.
+Claude can also inspect workspace pages, look up a specific page by slug, update SEO metadata, read a page's current sections, edit existing page content, manage tags and categories, manage page images (upload, search, and place), and find icons from the built-in icon library directly from chat. On publish, Claude can place a page in a collection or move it to the site root.
 
 For content review, Claude can export every page to a CSV file, or send a meeting transcript for content-gap analysis. The analysis runs in the background and its recommendations appear on the Meetings page in LandingRabbit.
+
+Claude can also work through the cards on the Meetings page: list open cards, ask you the card's question, send your answer for a check against your published pages, record which page you create or update for a card, and dismiss a card on request.
 
 Claude can also list the search keywords your workspace could rank for, grouped into topics with page ideas, and turn a chosen idea into the brief for a new page. This needs confirmed competitors under Brand in LandingRabbit.
 
@@ -178,6 +180,8 @@ Claude can also manage section style templates through MCP: plan how to recreate
 When a section needs a layout that isn't available out of the box, Claude can build a fully custom section design through MCP: start from a placeholder-based starter layout, save or update the custom layout for a section, and revert back to standard rendering — all while keeping chosen parts of the section editable in the editor.
 
 In some multi-locale workspaces, Claude may ask you to detach inherited styles before applying locale-specific brand style changes.
+
+Agencies can authorize the MCP server for **My brands** instead of a workspace. That connection offers two tools: list your brands, and edit a brand's design, including colors, fonts, buttons, spacing, section layouts, and custom section Styles. A brand-wide change shows as a preview on the brand page and is saved after you approve it.
 
 To format existing copy into LandingRabbit-ready markdown, use `/landingrabbit:page-format`. Give it your landing page copy — headlines, descriptions, CTAs, testimonials, pricing, FAQ, tabs, feed sections, article content, etc. — and it returns a single markdown document ready to import. The skill preserves your content and tone.
 
