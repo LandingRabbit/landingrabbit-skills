@@ -52,6 +52,7 @@ If MCP tools are available, also output this table:
 │ get_page_content               │ Read a page's sections before editing      │
 │ edit_page_content              │ Edit sections and page content             │
 │ edit_page_styles               │ Edit visual styles and layouts             │
+│ design_section                 │ Preview design options for a section       │
 │ manage_templates               │ Plan designs, manage templates and styles  │
 │ custom_design                  │ Design a custom section layout             │
 │ set_page_publish_state         │ Publish or unpublish a page                │

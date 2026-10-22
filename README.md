@@ -167,13 +167,17 @@ Run `/landingrabbit:landingrabbit` to get started. It checks your MCP connection
 
 With the MCP server connected, Claude can create a new page from your ideas, notes, or a meeting transcript. Claude can also convert finished copy into a page, and it can read the LandingRabbit page format guide over MCP, so copy drafted in chat imports without loss.
 
-Claude can also inspect workspace pages, look up a specific page by slug, update SEO metadata, read a page's current sections, edit existing page content, manage tags and categories, manage page images (upload, search, and place), and find icons from the built-in icon library directly from chat. On publish, Claude can place a page in a collection or move it to the site root.
+Claude can also inspect workspace pages, look up a specific page by slug, update SEO metadata, read a page's current sections, edit existing page content, manage tags and categories, manage page images (upload, search, and place), turn an image slot into a gallery of images and videos with an optional auto-loop, and find icons from the built-in icon library directly from chat. On publish, Claude can place a page in a collection or move it to the site root.
 
 For content review, Claude can export every page to a CSV file, or send a meeting transcript for content-gap analysis. The analysis runs in the background and its recommendations appear on the Meetings page in LandingRabbit.
 
 Claude can also work through the cards on the Meetings page: list open cards, ask you the card's question, send your answer for a check against your published pages, record which page you create or update for a card, and dismiss a card on request.
 
 Claude can also list the search keywords your workspace could rank for, grouped into topics with page ideas, and turn a chosen idea into the brief for a new page. This needs confirmed competitors under Brand in LandingRabbit.
+
+When a section should look better but the exact change is not decided yet, Claude can open the section as it renders, draft a few design options, show you each option as desktop and mobile images, and apply the one you pick. Nothing is written to the page until you choose.
+
+Claude can also list a page's versions and edit one specific version instead of the default edit target.
 
 Claude can also manage section style templates through MCP: plan how to recreate a described or pictured design with stock section layouts, inspect the active template/brand/base layers for a layout, create or update section templates, mark a template as the default for its layout, delete a template on explicit request, and update brand styles for an entire section group.
 

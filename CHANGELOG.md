@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10.0] - 2026-10-22
+
+### Added
+
+- Help command MCP tool table now includes `design_section`
+- README now documents previewing design options for a section, image and video galleries with auto-loop, and editing a specific page version via MCP
+
+### Changed
+
+- Main `landingrabbit` skill now mentions galleries and previewing design options in page-editing workflows
+
 ## [2.9.0] - 2026-10-12
 
 ### Added
@@ -181,7 +192,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.9.0...HEAD
+[unreleased]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.10.0...HEAD
+[2.10.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.9.0...v2.10.0
 [2.9.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.8.0...v2.9.0
 [2.8.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/landingrabbit/landingrabbit-skills/compare/v2.6.0...v2.7.0
